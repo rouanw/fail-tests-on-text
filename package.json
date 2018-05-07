@@ -13,7 +13,7 @@
   "author": "rouanw",
   "license": "MIT",
   "scripts": {
-    "test": "mocha test-mocha.js"
+    "test": "mocha test-mocha && node test-tape"
   },
   "devDependencies": {
     "mocha": "^5.1.1",
