@@ -1,5 +1,9 @@
 # fail-on-react-warn
 
+[![npm version](https://badge.fury.io/js/fail-on-react-warn.svg)](https://badge.fury.io/js/fail-on-react-warn)
+![Dependency Status](https://david-dm.org/rouanw/fail-on-react-warn.svg)
+![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)
+
 Tired of React warnings slipping into your code base unnoticed?
 
 __1. Install__
