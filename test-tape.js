@@ -1,7 +1,7 @@
 const test = require('tape');
 const React = require('react');
 const PropTypes = require('prop-types');
-const failOnReactWarn = require('./index');
+const failTestsOnText = require('./index');
 
 class ComponentThatNeedsProp extends React.Component {
   render () {
@@ -16,14 +16,14 @@ ComponentThatNeedsProp.propTypes = {
 };
 
 test('Fails tests on react warnings', (t) => {
-  failOnReactWarn('Warning:');
+  failTestsOnText('Warning:');
   t.plan(1);
   t.throws((() => React.createElement(ComponentThatNeedsProp)));
   t.end();
 });
 
 test.skip('Returns a cleanup method that puts things back to normal', (t) => {
-  const cleanup = failOnReactWarn('Warning:');
+  const cleanup = failTestsOnText('Warning:');
   t.plan(2);
   t.throws((() => React.createElement(ComponentThatNeedsProp)));
   cleanup();

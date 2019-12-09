@@ -1,7 +1,7 @@
 {
-  "name": "fail-on-react-warn",
+  "name": "fail-tests-on-text",
   "version": "1.0.0",
-  "description": "A utility that fails your test when React warnings are logged during execution",
+  "description": "A utility that fails your tests when some text is logged during execution",
   "main": "index.js",
   "keywords": [
     "react",

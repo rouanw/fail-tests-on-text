@@ -1,7 +1,7 @@
 const React = require('react');
 const PropTypes = require('prop-types');
 const assert = require('assert');
-const failOnReactWarn = require('./index');
+const failTestsOnText = require('./index');
 
 class ComponentThatNeedsProp extends React.Component {
   render () {
@@ -15,14 +15,14 @@ ComponentThatNeedsProp.propTypes = {
   needThis: PropTypes.string.isRequired,
 };
 
-describe('fail-on-react-warn', function() {
+describe('fail-tests-on-text', function() {
   it('Fails tests on react warnings', function() {
-    failOnReactWarn('Warning:');
+    failTestsOnText('Warning:');
     assert.throws(() => React.createElement(ComponentThatNeedsProp));
   });
   
   it.skip('Returns a cleanup method that puts things back to normal', function() {
-    const cleanup = failOnReactWarn('Warning:');
+    const cleanup = failTestsOnText('Warning:');
     cleanup();
     assert.doesNotThrow(() => React.createElement(ComponentThatNeedsProp));
   });

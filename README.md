@@ -1,7 +1,7 @@
-# fail-on-react-warn
+# fail-tests-on-text
 
-[![npm version](https://badge.fury.io/js/fail-on-react-warn.svg)](https://badge.fury.io/js/fail-on-react-warn)
-![Dependency Status](https://david-dm.org/rouanw/fail-on-react-warn.svg)
+[![npm version](https://badge.fury.io/js/fail-tests-on-text.svg)](https://badge.fury.io/js/fail-tests-on-text)
+![Dependency Status](https://david-dm.org/rouanw/fail-tests-on-text.svg)
 ![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)
 
 Tired of React warnings slipping into your code base unnoticed?
@@ -9,15 +9,15 @@ Tired of React warnings slipping into your code base unnoticed?
 __1. Install__
 
 ```sh
-npm install --save-dev fail-on-react-warn
+npm install --save-dev fail-tests-on-text
 ```
 
 __2. Use__
 
 ```js
-import failOnReactWarn from 'fail-on-react-warn';
+import failTestsOnText from 'fail-tests-on-text';
 
-failOnReactWarn(); // In your test setup somewhere.
+failTestsOnText(); // In your test setup somewhere.
 ```
 
 __3. Profit__
