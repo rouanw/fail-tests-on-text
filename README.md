@@ -4,7 +4,9 @@
 ![Dependency Status](https://david-dm.org/rouanw/fail-tests-on-text.svg)
 ![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)
 
-Tired of React warnings slipping into your code base unnoticed?
+Need to fail your tests when some text is output?
+
+We use this because we were tired of React warnings slipping into our code base unnoticed.
 
 __1. Install__
 
@@ -17,7 +19,7 @@ __2. Use__
 ```js
 import failTestsOnText from 'fail-tests-on-text';
 
-failTestsOnText(); // In your test setup somewhere.
+failTestsOnText('Warning:'); // In your test setup somewhere. This works great for catching React warnings (but will catch other stuff too!)
 ```
 
 __3. Profit__
