@@ -17,12 +17,12 @@ ComponentThatNeedsProp.propTypes = {
 
 describe('fail-on-react-warn', function() {
   it('Fails tests on react warnings', function() {
-    failOnReactWarn();
+    failOnReactWarn('Warning:');
     assert.throws(() => React.createElement(ComponentThatNeedsProp));
   });
   
   it.skip('Returns a cleanup method that puts things back to normal', function() {
-    const cleanup = failOnReactWarn();
+    const cleanup = failOnReactWarn('Warning:');
     cleanup();
     assert.doesNotThrow(() => React.createElement(ComponentThatNeedsProp));
   });

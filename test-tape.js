@@ -16,14 +16,14 @@ ComponentThatNeedsProp.propTypes = {
 };
 
 test('Fails tests on react warnings', (t) => {
-  failOnReactWarn();
+  failOnReactWarn('Warning:');
   t.plan(1);
   t.throws((() => React.createElement(ComponentThatNeedsProp)));
   t.end();
 });
 
 test.skip('Returns a cleanup method that puts things back to normal', (t) => {
-  const cleanup = failOnReactWarn();
+  const cleanup = failOnReactWarn('Warning:');
   t.plan(2);
   t.throws((() => React.createElement(ComponentThatNeedsProp)));
   cleanup();
