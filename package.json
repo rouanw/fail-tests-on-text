@@ -1,6 +1,6 @@
 {
   "name": "fail-tests-on-text",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A utility that fails your tests when some text is logged during execution",
   "main": "index.js",
   "repository": {
